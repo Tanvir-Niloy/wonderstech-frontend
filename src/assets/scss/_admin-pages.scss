@@ -1,0 +1,159 @@
+//========== Side bar design ============
+
+// .admin__layout-main {
+//   display: flex;
+// }
+
+.sidebar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5);
+
+  z-index: 3;
+}
+
+.sidebar_wrapper {
+  width: 300px;
+  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  .sidebar__body-info {
+    background-color: rgb(243, 85, 159);
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sidebar__close-btn {
+      border: 1px solid transparent;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 28px;
+
+      &:hover {
+        border: 1px solid #777;
+      }
+    }
+  }
+
+  .sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //  align-items: center;
+
+    &__menu {
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px 5px;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        background: rgb(255, 220, 235);
+        background: linear-gradient(
+          to left,
+          rgba(255, 220, 235, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 3px;
+        width: 100%;
+        transition: all 0.3s ease;
+
+        i {
+          flex: 0 0 20%;
+          text-align: center;
+        }
+
+        &:hover {
+          background: rgb(8, 221, 186);
+        }
+      }
+    }
+
+    &__footer {
+      background-color: #212627;
+      text-align: center;
+      text-transform: uppercase;
+      color: #777;
+    }
+  }
+}
+
+//================= Header Nav Design =============
+
+.admin__header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc(3vw + 3px);
+
+  background: rgb(255, 220, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 220, 235, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  &-hamburger {
+    display: none;
+    padding: 12px 30px;
+    font-size: 23px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 14px 30px;
+        cursor: pointer;
+        display: inline-block;
+        color: #fff;
+
+        &:hover {
+          color: palegreen;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

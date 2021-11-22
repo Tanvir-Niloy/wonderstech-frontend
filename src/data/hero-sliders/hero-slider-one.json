@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Wonders Tech",
+    "subtitle": "Best Smart Gadget Shop",
+    "image": "/assets/img/slider/asus-rog.png",
+    "url": "/shop-grid-standard"
+  },
+  {
+    "id": 2,
+    "title": "Wonders Tech SmartShop",
+    "subtitle": "Expore Modern Gadget ",
+    "image": "/assets/img/slider/Apple-Watch-with-macbook-.png",
+    "url": "/shop-grid-standard"
+  }
+]
